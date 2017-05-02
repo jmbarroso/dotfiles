@@ -67,10 +67,8 @@ brew cask install mysqlworkbench
 
 # Utilities
 brew cask install caffeine
-brew cask install clipmenu
 brew cask install dashlane
 brew cask install itsycal
-brew cask install wunderlist
 
 # Web
 brew cask install google-chrome
@@ -91,11 +89,15 @@ brew cleanup --force
 # Install SDKMAN (Grails dependency)
 curl -s "https://get.sdkman.io" | bash
 
+source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
+
 sdk install groovy 2.1.7
 sdk install grails 2.3.6
 sdk install grails 2.3.11
 
 # Install RVM (CI Manager)
 curl -sSL "https://get.rvm.io" | bash
+
+source /Users/cfaria/.rvm/scripts/rvm
 
 rvm install 2.2.2
