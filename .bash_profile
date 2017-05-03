@@ -5,6 +5,9 @@ export PATH="$HOME/bin:$PATH";
 export GRAILS_OPTS="-Xmx4000M -XX:MaxPermSize=2000M -Dfile.encoding=UTF-8";
 export JAVA_OPTS="-Duser.timezone=UTC"
 
+# Set JAVA HOME to desired java version
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -65,11 +68,8 @@ alias grails-superclean='~/development/developer-productivity-scripts/grails-sup
 # Api Token for Github enterprise Intuit
 export GPP_CI_GITHUB_API_TOKEN="0d62cbd4cb162448bbdd2d7e9fa0fcddb1d0320f"
 
-# Set JAVA as JAVA 7
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_72.jdk/Contents/Home/
-
-# Set MySQL in Path
-export PATH="/usr/local/mysql/bin:$PATH"
+# Set MySQL in Path using brew installation
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
 # RVM Configuration
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
