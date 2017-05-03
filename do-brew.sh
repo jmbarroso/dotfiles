@@ -44,6 +44,10 @@ brew install homebrew/dupes/screen
 # Install other useful binaries.
 brew install git
 
+# Install Mysql 5.6
+brew install mysql@5.6
+echo 'export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"' >> ~/.bash_profile
+
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
