@@ -65,9 +65,6 @@ alias grails-superclean='~/development/developer-productivity-scripts/grails-sup
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-# Api Token for Github enterprise Intuit
-export GPP_CI_GITHUB_API_TOKEN="0d62cbd4cb162448bbdd2d7e9fa0fcddb1d0320f"
-
 # Set MySQL in Path using brew installation
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
