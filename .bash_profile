@@ -62,6 +62,7 @@ alias run-tests='groovy ~/development/developer-productivity-scripts/runtests.gr
 alias run-test='groovy ~/development/developer-productivity-scripts/runtests.groovy'
 alias grailsgitup='~/development/developer-productivity-scripts/grailsgitup.sh'
 alias grails-superclean='~/development/developer-productivity-scripts/grails-superclean.sh'
+alias git-branch-clean='git branch | grep -v "master" | xargs git branch -D'
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
