@@ -87,6 +87,9 @@ brew cask install dropbox
 brew cask install vlc
 brew cask install spotify
 
+# Docker
+brew install docker
+
 # Remove outdated versions from the cellar.
 brew cleanup --force
 
