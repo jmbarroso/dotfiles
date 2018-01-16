@@ -44,6 +44,7 @@ brew install homebrew/dupes/screen
 # Install other useful binaries.
 brew install git
 brew install cloc
+brew install ccat
 
 # Install Mysql 5.6
 brew install mysql@5.6
