@@ -66,6 +66,7 @@ alias gitup='git fetch origin && git pull origin master'
 alias git-branch-clean='git branch | grep -v "master" | xargs git branch -D'
 alias java8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"'
 alias java7='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/"'
+alias cat=ccat
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 

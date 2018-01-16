@@ -43,6 +43,7 @@ brew install homebrew/dupes/screen
 
 # Install other useful binaries.
 brew install git
+brew install cloc
 
 # Install Mysql 5.6
 brew install mysql@5.6
@@ -65,7 +66,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Coding
 brew cask install sublime-text
-brew cask install nvalt
+brew cask install evernote
 brew cask install intellij-idea
 brew cask install mysqlworkbench
 
