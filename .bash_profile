@@ -2,7 +2,7 @@
 export PATH="$HOME/bin:$PATH";
 
 # Grails configuration settings
-export GRAILS_OPTS="-Xmx4000M -XX:MaxPermSize=2000M -Dfile.encoding=UTF-8";
+export GRAILS_OPTS="-Xmx6000M -XX:MaxPermSize=2000M -Dfile.encoding=UTF-8";
 export JAVA_OPTS="-Duser.timezone=UTC"
 
 # Set JAVA HOME to desired java version
@@ -62,7 +62,10 @@ alias run-tests='groovy ~/development/developer-productivity-scripts/runtests.gr
 alias run-test='groovy ~/development/developer-productivity-scripts/runtests.groovy'
 alias grailsgitup='~/development/developer-productivity-scripts/grailsgitup.sh'
 alias grails-superclean='~/development/developer-productivity-scripts/grails-superclean.sh'
+alias gitup='git fetch origin && git pull origin master'
 alias git-branch-clean='git branch | grep -v "master" | xargs git branch -D'
+alias java8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"'
+alias java7='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/"'
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
