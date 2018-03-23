@@ -53,6 +53,7 @@ echo 'export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"' >> ~/.bash_profile
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
+brew install yarn
 
 # Formulae for Useful Desktop Applications using Cask
 # More Info at https://github.com/caskroom/homebrew-cask
