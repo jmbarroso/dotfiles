@@ -50,14 +50,15 @@ brew install ccat
 brew install mysql@5.6
 echo 'export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"' >> ~/.bash_profile
 
+# Formulae for Useful Desktop Applications using Cask
+# More Info at https://github.com/caskroom/homebrew-cask
+brew install caskroom/cask/brew-cask
+
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
 brew install yarn
-
-# Formulae for Useful Desktop Applications using Cask
-# More Info at https://github.com/caskroom/homebrew-cask
-brew install caskroom/cask/brew-cask
+brew cask install postman
 
 # Install JAVA 7
 brew tap caskroom/versions
@@ -65,6 +66,10 @@ brew cask install java7
 
 # Set all Casks to be installed in Applications folder
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Install cool fonts
+brew tap caskroom/fonts
+brew cask install font-source-code-pro
 
 # Coding
 brew cask install sublime-text
