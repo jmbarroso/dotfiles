@@ -1,0 +1,42 @@
+# ---------------------------------
+# General Things
+# ---------------------------------
+alias cat=ccat
+
+# ---------------------------------
+# Work Misc
+# ---------------------------------
+alias aws-ssh="~/misc-scripts/ssh/bin/aws-ssh"
+
+# ---------------------------------
+# Mysql
+# ---------------------------------
+alias mysql-root='mysql -u root -p'
+alias mysql-restart='sudo /usr/local/mysql/support-files/mysql.server stop && sudo /usr/local/mysql/support-files/mysql.server start'
+
+# ---------------------------------
+# Grails Environment
+# ---------------------------------
+alias run-tests='groovy ~/development/developer-productivity-scripts/runtests.groovy'
+alias run-test='groovy ~/development/developer-productivity-scripts/runtests.groovy'
+alias grailsgitup='~/development/developer-productivity-scripts/grailsgitup.sh'
+alias grails-superclean='~/development/developer-productivity-scripts/grails-superclean.sh'
+
+# ---------------------------------
+# Java Aliases
+# ---------------------------------
+alias java8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"'
+alias java7='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/"'
+
+
+# ---------------------------------
+# Git Aliases
+# ---------------------------------
+alias gitup='git fetch origin && git pull origin master'
+alias git-branch-clean='git branch | grep -v "master" | xargs git branch -D'
+alias gs='git status'
+
+# This should be the last line of the file
+# For local changes
+# Don't make edits below this
+[ -f ".aliases.local" ] && source ".aliases.local"

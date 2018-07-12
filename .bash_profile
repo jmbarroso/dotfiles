@@ -1,13 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Grails configuration settings
-export GRAILS_OPTS="-Xmx6000M -XX:MaxPermSize=2000M -Dfile.encoding=UTF-8";
-export JAVA_OPTS="-Duser.timezone=UTC"
-
-# Set JAVA HOME to desired java version
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -54,29 +47,13 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# Alias all the things
-alias aws-ssh="~/misc-scripts/ssh/bin/aws-ssh"
-alias mysql-root='mysql -u root -p'
-alias mysql-restart='sudo /usr/local/mysql/support-files/mysql.server stop && sudo /usr/local/mysql/support-files/mysql.server start'
-alias run-tests='groovy ~/development/developer-productivity-scripts/runtests.groovy'
-alias run-test='groovy ~/development/developer-productivity-scripts/runtests.groovy'
-alias grailsgitup='~/development/developer-productivity-scripts/grailsgitup.sh'
-alias grails-superclean='~/development/developer-productivity-scripts/grails-superclean.sh'
-alias gitup='git fetch origin && git pull origin master'
-alias git-branch-clean='git branch | grep -v "master" | xargs git branch -D'
-alias java8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"'
-alias java7='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/"'
-alias cat=ccat
-
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-# Set MySQL in Path using brew installation
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+# Organized Configuration
+source .aliases
+source .exports
 
-# RVM Configuration
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/cfaria/.sdkman"
-[[ -s "/Users/cfaria/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
+# This should be the last line of the file
+# For local changes
+# Don't make edits below this
+[ -f ".bash_profile.local" ] && source ".bash_profile.local"
