@@ -2,6 +2,7 @@
 # General Things
 # ---------------------------------
 alias cat=ccat
+alias ls='ls -GFh'
 
 # ---------------------------------
 # Work Misc
@@ -21,13 +22,6 @@ alias run-tests='groovy ~/development/developer-productivity-scripts/runtests.gr
 alias run-test='groovy ~/development/developer-productivity-scripts/runtests.groovy'
 alias grailsgitup='~/development/developer-productivity-scripts/grailsgitup.sh'
 alias grails-superclean='~/development/developer-productivity-scripts/grails-superclean.sh'
-
-# ---------------------------------
-# Java Aliases
-# ---------------------------------
-alias java8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/"'
-alias java7='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/"'
-
 
 # ---------------------------------
 # Git Aliases

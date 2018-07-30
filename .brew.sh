@@ -75,6 +75,7 @@ brew cask install intellij-idea
 brew install kubernetes-cli
 
 # Utilities
+brew cask install clipy
 brew cask install caffeine
 brew cask install dashlane
 brew cask install itsycal
@@ -100,4 +101,7 @@ curl -s "https://get.sdkman.io" | bash
 
 source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
 
+sdk install java 7.0.181-zulu
+sdk install java 8.0.181-oracle
+sdk install java 9.0.4-openjdk
 sdk install groovy 2.5.1
