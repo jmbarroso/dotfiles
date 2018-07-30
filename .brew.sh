@@ -89,6 +89,9 @@ brew cask install slack
 # Personal
 brew cask install dropbox
 
+# Photography
+brew cask install adobe-creative-cloud
+
 # Extra
 brew cask install vlc
 brew cask install spotify
