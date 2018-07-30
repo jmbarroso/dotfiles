@@ -21,10 +21,13 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
+
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
+
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
+
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
@@ -39,16 +42,11 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-#brew install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries.
 brew install git
 brew install cloc
 brew install ccat
-
-# Install Mysql 5.6
-brew install mysql@5.6
-echo 'export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"' >> ~/.bash_profile
 
 # Formulae for Useful Desktop Applications using Cask
 # More Info at https://github.com/caskroom/homebrew-cask
@@ -60,14 +58,7 @@ brew install nodenv
 nodenv init
 nodenv install 8.11.3
 
-brew cask install postman
-
-# Install JAVA 7
 brew tap caskroom/versions
-brew cask install java7
-
-# Set all Casks to be installed in Applications folder
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Install cool fonts
 brew tap caskroom/fonts
@@ -75,9 +66,12 @@ brew cask install font-source-code-pro
 
 # Coding
 brew cask install sublime-text
+
+# Set sublime as a command line tool
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+
 brew cask install evernote
 brew cask install intellij-idea
-brew cask install mysqlworkbench
 brew install kubernetes-cli
 
 # Utilities
@@ -101,18 +95,9 @@ brew cask install spotify
 # Remove outdated versions from the cellar.
 brew cleanup --force
 
-# Install SDKMAN (Grails dependency)
+# Install SDKMAN
 curl -s "https://get.sdkman.io" | bash
 
 source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
 
-sdk install groovy 2.1.7
-sdk install grails 2.3.6
-sdk install grails 2.3.11
-
-# Install RVM (CI Manager)
-curl -sSL "https://get.rvm.io" | bash
-
-source /Users/cfaria/.rvm/scripts/rvm
-
-rvm install 2.2.2
+sdk install groovy 2.5.1

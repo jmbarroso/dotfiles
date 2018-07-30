@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Grails configuration settings
 export GRAILS_OPTS="-Xmx6000M -XX:MaxPermSize=2000M -Dfile.encoding=UTF-8";
 export JAVA_OPTS="-Duser.timezone=UTC"
@@ -7,6 +9,9 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Hom
 
 # Set MySQL in Path using brew installation
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
+# Set all Casks to be installed in Applications folder
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # RVM Configuration
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
