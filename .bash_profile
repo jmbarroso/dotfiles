@@ -49,6 +49,8 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
+eval "$(nodenv init -)"
+
 # Organized Configuration
 source .aliases
 source .exports

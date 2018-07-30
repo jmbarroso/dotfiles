@@ -56,8 +56,10 @@ brew install caskroom/cask/brew-cask
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
-brew install node
-brew install yarn
+brew install nodenv
+nodenv init
+nodenv install 8.11.3
+
 brew cask install postman
 
 # Install JAVA 7
@@ -76,6 +78,7 @@ brew cask install sublime-text
 brew cask install evernote
 brew cask install intellij-idea
 brew cask install mysqlworkbench
+brew install kubernetes-cli
 
 # Utilities
 brew cask install caffeine
