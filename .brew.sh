@@ -66,6 +66,7 @@ brew cask install font-source-code-pro
 
 # Coding
 brew cask install sublime-text
+brew cask install atom
 
 # Set sublime as a command line tool
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
