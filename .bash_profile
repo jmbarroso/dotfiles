@@ -51,9 +51,11 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 eval "$(nodenv init -)"
 
+eval "$(pyenv init -)"
+
 # Organized Configuration
-source .aliases
-source .exports
+source ~/.aliases
+source ~/.exports
 
 # This should be the last line of the file
 # For local changes
