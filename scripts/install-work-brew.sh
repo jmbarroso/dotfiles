@@ -7,6 +7,10 @@ brew ls --versions mysql@5.6
 # RDS
 brew install mysql@5.6
 
+brew install maven
+
+brew install awscli
+
 # Install SDKMAN
 curl -s "https://get.sdkman.io" | bash
 

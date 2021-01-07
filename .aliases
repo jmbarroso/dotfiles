@@ -5,9 +5,14 @@ alias cat=ccat
 alias ls='ls -GFh'
 
 # ---------------------------------
+# Python Things
+# ---------------------------------
+alias pip='python3 -m pip'
+
+# ---------------------------------
 # Work Misc
 # ---------------------------------
-alias aws-ssh="export AWS_DEFAULT_REGION=us-west-2 && python ~/development/projects/awstools/ssh/python/aws-ssh.py"
+alias aws-ssh="export AWS_DEFAULT_REGION=us-west-2 && python3 ~/development/projects/aws-ssh/aws_ssh/awsssh.py"
 
 # ---------------------------------
 # Node
