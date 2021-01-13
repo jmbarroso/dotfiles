@@ -11,6 +11,8 @@ brew install maven
 
 brew install awscli
 
+brew install --cask intellij-idea
+
 # Install SDKMAN
 curl -s "https://get.sdkman.io" | bash
 
