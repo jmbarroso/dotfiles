@@ -2,10 +2,10 @@
 
 # Install tools useful for work
 
-brew ls --versions mysql@5.6
+brew ls --versions mysql@5.7
 
 # RDS
-brew install mysql@5.6
+brew install mysql@5.7
 
 brew install maven
 

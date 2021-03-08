@@ -5,7 +5,7 @@ export GRAILS_OPTS="-Xmx6000M -XX:MaxPermSize=2000M -Dfile.encoding=UTF-8";
 export JAVA_OPTS="-Duser.timezone=UTC"
 
 # Set MySQL in Path using brew installation
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # Set all Casks to be installed in Applications folder
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
