@@ -25,6 +25,7 @@ brew install --cask dropbox
 
 # Web
 brew install --cask google-chrome
+brew install --cask firefox
 
 # Chat
 brew install --cask whatsapp
