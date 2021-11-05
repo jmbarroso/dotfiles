@@ -7,34 +7,17 @@ alias ls='ls -GFh'
 # ---------------------------------
 # Python Things
 # ---------------------------------
-alias pip='python3 -m pip'
+
 
 # ---------------------------------
 # Work Misc
 # ---------------------------------
-alias aws-ssh="export AWS_DEFAULT_REGION=us-west-2 && python3 ~/development/projects/aws-ssh/aws_ssh/awsssh.py"
+
 
 # ---------------------------------
 # Node
 # ---------------------------------
 alias nodemem='node --max-old-space-size=4096'
-alias grunt_dev='npx grunt devServer --max-old-space-size=4096'
-alias grunt_test='node_modules/.bin/grunt test --debugMode=true --suites=test/unit/suites/dev.js --coverage'
-alias grunt_coverage='node_modules/.bin/grunt test --suites=test/unit/suites/dev.js --coverage'
-
-# ---------------------------------
-# Mysql
-# ---------------------------------
-alias mysql-root='mysql -u root -p'
-alias mysql-restart='sudo /usr/local/mysql/support-files/mysql.server stop && sudo /usr/local/mysql/support-files/mysql.server start'
-
-# ---------------------------------
-# Grails Environment
-# ---------------------------------
-alias run-tests='groovy ~/development/developer-productivity-scripts/runtests.groovy'
-alias run-test='groovy ~/development/developer-productivity-scripts/runtests.groovy'
-alias grailsgitup='~/development/developer-productivity-scripts/grailsgitup.sh'
-alias grails-superclean='~/development/developer-productivity-scripts/grails-superclean.sh'
 
 # ---------------------------------
 # Git Aliases
