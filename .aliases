@@ -26,6 +26,7 @@ alias gitup='git fetch origin && git pull origin master'
 alias git-branch-clean='git branch | grep -v "master" | xargs git branch -D'
 alias gs='git status'
 alias gc='git checkout'
+alias ga='git add'
 
 # This should be the last line of the file
 # For local changes
