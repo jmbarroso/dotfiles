@@ -14,6 +14,12 @@ sdk install java 11.0.9-amzn
 # Work Chat
 brew install --cask slack
 
+# Work Wiki/Ticketing
+brew install --cask notion
+
+# Infrastructure
+brew install aws-cdk
+
 # Install Node.js
 brew install nodenv
 nodenv init
