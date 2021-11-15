@@ -13,6 +13,7 @@ sdk install java 11.0.9-amzn
 
 # Work Chat
 brew install --cask slack
+brew install --cask zoom
 
 # Work Wiki/Ticketing
 brew install --cask notion
