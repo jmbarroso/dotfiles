@@ -14,3 +14,6 @@ source $ZSH/oh-my-zsh.sh
 # Organized Configuration
 source ~/.aliases
 source ~/.exports
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+

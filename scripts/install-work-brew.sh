@@ -4,12 +4,9 @@
 brew install --cask intellij-idea
 
 # Install SDKMAN
-curl -s "https://get.sdkman.io" | zsh
+curl -s "https://get.sdkman.io?rcupdate=false" | zsh
 
 source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
-
-# Java
-sdk install java 11.0.9-amzn
 
 # Work Chat
 brew install --cask slack
