@@ -4,7 +4,7 @@
 brew install --cask intellij-idea
 
 # Install SDKMAN
-curl -s "https://get.sdkman.io" | bash
+curl -s "https://get.sdkman.io" | zsh
 
 source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
 
