@@ -4,16 +4,17 @@ cd scripts
 
 echo
 echo "###################################"
-echo "Setting up BASH"
+echo "Setting up ZSH"
 echo "###################################"
 echo
-echo "Setting bash as default"
-chsh -s /bin/bash
+echo "Install Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo
+echo "Setting up ZSH configurations"
+export ZSH="~/development/dotfiles/oh-my-zsh"
+ln -s ~/development/dotfiles/.zshrc ~/.zshrc
 ln -s ~/development/dotfiles/.aliases ~/.aliases
-ln -s ~/development/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/development/dotfiles/.bash_prompt ~/.bash_prompt
 ln -s ~/development/dotfiles/.exports ~/.exports
-ln -s ~/development/dotfiles/.inputrc ~/.inputrc
 
 echo
 echo "###################################"

@@ -25,6 +25,7 @@ alias nodemem='node --max-old-space-size=4096'
 alias gitup='git fetch origin && git pull origin master'
 alias git-branch-clean='git branch | grep -v "master" | xargs git branch -D'
 alias gs='git status'
+alias gc='git checkout'
 
 # This should be the last line of the file
 # For local changes
