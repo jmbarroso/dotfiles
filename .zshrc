@@ -2,7 +2,7 @@
 export ZSH="$HOME/development/dotfiles/.oh-my-zsh"
 
 # Oh My Zsh Theme
-ZSH_THEME="frisk"
+ZSH_THEME="gentoo"
 
 # Oh My Zsh plugins
 plugins=(
