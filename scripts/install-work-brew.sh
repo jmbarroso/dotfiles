@@ -12,8 +12,6 @@ source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
 brew install --cask slack
 brew install --cask zoom
 
-# Work Wiki/Ticketing
-brew install --cask notion
 
 # Infrastructure
 brew install aws-cdk
@@ -22,3 +20,6 @@ brew install aws-cdk
 brew install nodenv
 nodenv init
 nodenv install 16.13.0
+
+# FTP Client
+brew cask install cyberduck

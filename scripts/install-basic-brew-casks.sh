@@ -15,19 +15,18 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/loca
 
 # Notes
 brew install --cask evernote
+brew install --cask notion
 
 # Utilities
 brew install --cask clipy
 brew install --cask caffeine
-brew install --cask itsycal
 brew install --cask dropbox
+brew install --cask hammerspoon
 
 # Web
 brew install --cask google-chrome
 brew install --cask firefox
 
-# Chat
-brew install --cask whatsapp
 
 # Entertainment
 brew install --cask spotify
