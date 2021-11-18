@@ -4,6 +4,7 @@
 brew tap homebrew/cask-versions
 
 # Install cool fonts
+brew install svn
 brew tap homebrew/cask-fonts
 brew install --cask font-source-code-pro
 
@@ -21,7 +22,7 @@ brew install --cask notion
 brew install --cask clipy
 brew install --cask caffeine
 brew install --cask dropbox
-brew install --cask hammerspoon
+brew install --cask hammerspoon #ShiftIt -> https://github.com/peterklijn/hammerspoon-shiftit/blob/master/README.md
 
 # Web
 brew install --cask google-chrome

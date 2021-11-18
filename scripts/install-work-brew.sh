@@ -22,4 +22,4 @@ nodenv init
 nodenv install 16.13.0
 
 # FTP Client
-brew cask install cyberduck
+brew install --cask cyberduck
