@@ -4,8 +4,8 @@
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/cfaria/.sdkman"
-[[ -s "/Users/cfaria/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/cfaria/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/Users/jmbarroso/.sdkman"
+[[ -s "/Users/jmbarroso/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jmbarroso/.sdkman/bin/sdkman-init.sh"
 
 # This should be the last line of the file
 # For local changes
